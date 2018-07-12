@@ -1,0 +1,5 @@
+env:
+  open:
+    STORAGE: google
+    STORAGE_GOOGLE_BUCKET: my-gcs-bucket
+    STORAGE_GOOGLE_PREFIX:    

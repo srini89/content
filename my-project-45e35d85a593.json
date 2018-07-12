@@ -1,0 +1,2 @@
+export JSONKEY=$(cat my-project-77e35d85a593.json | base64)
+helm install stable/chartmuseum --debug  --set gcp.secret.enabled=true,env.secret.GOOGLE_CREDENTIALS_JSON=${JSONKEY},env.open.STORAGE=google,env.open.DISABLE_API=false,env.open.STORAGE_GOOGLE_BUCKET=my-gcp-chartmuseum
